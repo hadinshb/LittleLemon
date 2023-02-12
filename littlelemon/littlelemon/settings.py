@@ -139,4 +139,10 @@ DJOSER={"USER_ID_FIELD":"username"}
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework.authentication.TokenAuthentication',
     'rest_framework.authentication.SessionAuthentication',],
+
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
+
 }
